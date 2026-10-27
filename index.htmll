@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setu AI Signal Bot</title>
+<style>
+body{font-family:Arial,sans-serif;background:#101827;color:white;padding:18px}
+.card{background:#1e293b;padding:18px;border-radius:14px;margin:12px 0}
+button,select{padding:12px;border-radius:8px;font-size:16px}
+button{background:#22c55e;border:0;color:#07120a}
+</style>
+</head>
+<body>
+<h2>💙 Setu AI Signal Bot</h2>
+<div class="card">
+<p>Forex Signal Demo</p>
+<label>Timeframe:</label>
+<select id="tf">
+<option value="1">1 Minute</option>
+<option value="5">5 Minutes</option>
+</select>
+<p id="result">এখনো কোনো সিগন্যাল নেই</p>
+<button onclick="demo()">ডেমো পরীক্ষা</button>
+</div>
+<div class="card">
+⚠️ এটি শুধু ডেমো। লাইভ মার্কেট ডেটা সংযুক্ত নয়।
+</div>
+<script>
+function demo(){
+document.getElementById('result').textContent=
+'ডেমো চলছে — '+document.getElementById('tf').value+
+' মিনিট। লাইভ ডেটা ছাড়া ট্রেড সিগন্যাল দেওয়া হচ্ছে না।';
+}
+</script>
+</body>
+</html>
